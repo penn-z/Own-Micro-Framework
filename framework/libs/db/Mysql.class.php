@@ -95,7 +95,7 @@ class Mysql implements Idb {
 	 * Delete Data
 	 * @param string $_table table_name
 	 * @param string $_where condition
-	 * @return void
+	 * @return mix : int(-1:false | 0:no affected row | >0:the affected row) | false
 	 */
 	public function deleteData($_table, $_where) {
 		// DELETE FROM table WHERE condition
@@ -155,11 +155,16 @@ class Mysql implements Idb {
 	 * @param string $_table table_name
 	 * @param string $_target column_name
 	 * @param string $_where condition
-	 * @return array $rows data_array
+	 * @param string $_condition condition
+	 * @return array $rows data_array | boolean:false
 	 */
-	public function getList($_table, $_where, $_target = '*') {
-		//SELECT * FROM table WHERE 1 = 1
-		$sql = "SELECT $_target FROM $_table WHERE $_where";
+	public function getList($_table, $_where = '', $_target = '*' ,$_condition = '') {
+		//SELECT * FROM table WHERE 1=1 [GROUP BY [HAVING]] [ORDER BY] [ORDER BY] 
+		if($_where == '') {
+			$sql = "SELECT $_target FROM $_table $_condition";
+		} else {
+			$sql = "SELECT $_target FROM $_table WHERE $_where $_condition";
+		}
 		$result = $this->query($sql);
 		while($row = mysqli_fetch_assoc($result)) {
 			$rows[] = $row;

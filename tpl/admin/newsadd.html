@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<title>后台登录</title>
+	<title>后台管理系统</title>
 	
 	<link rel="stylesheet" href="img/css/layout.css" type="text/css" media="screen" />
 	<!--[if lt IE 9]>
@@ -60,45 +60,46 @@
 	
 	<section id="secondary_bar">
 		<div class="user">
-			<p>请在右侧登录</p>
+			<p>{$smarty.session.account}</p>
+			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="admin.php?controller=admin">后台管理中心</a> <div class="breadcrumb_divider"></div> <a class="current">登录</a></article>
+			<article class="breadcrumbs"><a href="admin.php？controller=admin">后台管理系统</a> <div class="breadcrumb_divider"></div> <a class="current">文章发布</a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	
-	<aside id="sidebar" class="column">
-		<h3>登录后台</h3>
-		<ul class="toggle">
-			<li class="icn_security"><a href="#">登录后台</a></li>
-		</ul>
-	</aside><!-- end of sidebar -->
+	{include file='admin/leftmenu.html'}
 	
 	<section id="main" class="column">
-		
-		<h4 class="alert_info" style="width:46%">请使用您的用户名和密码在下面登录.</h4>
-		<form id="form1" name="form1" method="post" action="/?controller=admin&method=login">
-		<article class="module width_half">
-			<header><h3>管理员登录</h3></header>
-				<div class="module_content">
-						<fieldset>
-							<label>用户名</label>
-							<input type="text" name="username" style="width:92%;">
-						</fieldset>
-						<fieldset>
-							<label>密码</label>
-							<input type="password" name="password" style="width:92%;">
-						</fieldset>
-						<div class="clear"></div>
-				</div>
-			<footer>
-				<div class="submit_link">
-					<input type="submit" name="submit" value="开始登录" class="alt_btn">
-				</div>
-			</footer>
-		</article>
+		<form id="form1" name="form1" method="post" action="index.php?controller=admin&method=newsadd">
+			<article class="module width_full">
+				<header><h3>发表新文章</h3></header>
+					<div class="module_content">
+							<fieldset>
+								<label>标题</label>
+								<input type="text" name="title" value="{$data.title|default:''}">
+							</fieldset>
+							<fieldset>
+								<label>内容</label>
+								<textarea rows="12" name="content">{$data.content|default:''}</textarea>
+							</fieldset>
+							<fieldset style="width:48%; float:left; margin-right: 3%;">
+								<label>作者</label>
+								<input type="text" name="author" style="width:92%;" value="{$data.author|default:''}">
+							</fieldset>
+							<fieldset style="width:48%; float:left;">
+								<label>出处</label>
+								<input type="text" name="source" style="width:92%;" value="{$data.source|default:''}">
+							</fieldset><div class="clear"></div>
+					</div>
+				<footer>
+					<div class="submit_link">
+						<input type="hidden" name="id" value="{$data.id|default:''}">
+						<input type="submit" name="submit" value="发布" class="alt_btn">
+					</div>
+				</footer>
+			</article>
 		</form>
-		
 		<div class="spacer"></div>
 	</section>
 

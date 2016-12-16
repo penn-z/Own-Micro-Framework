@@ -26,8 +26,8 @@ class DB {
 		// return self::$db;
 	}
 
-	public static function getList($table,$where,$target = '*') {
-		return self::$db->getList($table,$where,$target);
+	public static function getList($table, $where, $target = '*', $condition = '') {
+		return self::$db->getList($table, $where, $target, $condition);
 	}
 
 	public static function getOneRow($table,$where,$target= '*') {
