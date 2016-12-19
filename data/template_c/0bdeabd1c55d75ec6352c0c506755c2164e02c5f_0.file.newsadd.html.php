@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-12-16 23:05:06
+/* Smarty version 3.1.30, created on 2016-12-19 10:57:38
   from "/var/www/mvc/tpl/admin/newsadd.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_585402a2f3daa5_67191242',
+  'unifunc' => 'content_58574ca2cc47c6_96834111',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0bdeabd1c55d75ec6352c0c506755c2164e02c5f' => 
     array (
       0 => '/var/www/mvc/tpl/admin/newsadd.html',
-      1 => 1481815867,
+      1 => 1482115520,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:admin/leftmenu.html' => 1,
   ),
 ),false)) {
-function content_585402a2f3daa5_67191242 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58574ca2cc47c6_96834111 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html>
@@ -47,6 +47,9 @@ function content_585402a2f3daa5_67191242 (Smarty_Internal_Template $_smarty_tpl)
 >
 	<?php echo '<script'; ?>
  type="text/javascript" src="img/js/jquery.equalHeight.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="tools/ckeditor/ckeditor.js"><?php echo '</script'; ?>
 >
 	<?php echo '<script'; ?>
  type="text/javascript">
@@ -104,7 +107,7 @@ function content_585402a2f3daa5_67191242 (Smarty_Internal_Template $_smarty_tpl)
 			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="admin.php？controller=admin">后台管理系统</a> <div class="breadcrumb_divider"></div> <a class="current">文章发布</a></article>
+			<article class="breadcrumbs"><a href="index.php？controller=admin">后台管理系统</a> <div class="breadcrumb_divider"></div> <a class="current">文章发布</a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	
@@ -123,8 +126,8 @@ function content_585402a2f3daa5_67191242 (Smarty_Internal_Template $_smarty_tpl)
 ">
 							</fieldset>
 							<fieldset>
-								<label>内容</label>
-								<textarea rows="12" name="content"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['content'])===null||$tmp==='' ? '' : $tmp);?>
+								<!-- <label>内容</label> -->
+								<textarea rows="12" name="content" id="editor1"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['content'])===null||$tmp==='' ? '' : $tmp);?>
 </textarea>
 							</fieldset>
 							<fieldset style="width:48%; float:left; margin-right: 3%;">
@@ -150,7 +153,11 @@ function content_585402a2f3daa5_67191242 (Smarty_Internal_Template $_smarty_tpl)
 		<div class="spacer"></div>
 	</section>
 
-
+<?php echo '<script'; ?>
+>
+ CKEDITOR.replace( 'editor1' );
+<?php echo '</script'; ?>
+>
 </body>
 
 </html><?php }

@@ -23,7 +23,7 @@
 
 	//When page loads...
 	$(".tab_content").hide(); //Hide all content
-	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$("ul.tabs li:first").addClasss("active").show(); //Activate first tab
 	$(".tab_content:first").show(); //Show first tab content
 
 	//On Click Event
@@ -63,7 +63,7 @@
 			<p>请在右侧登录</p>
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="admin.php?controller=admin">后台管理中心</a> <div class="breadcrumb_divider"></div> <a class="current">登录</a></article>
+			<article class="breadcrumbs"><a href="index.php?controller=admin">后台管理中心</a> <div class="breadcrumb_divider"></div> <a class="current">登录</a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	
@@ -77,7 +77,7 @@
 	<section id="main" class="column">
 		
 		<h4 class="alert_info" style="width:46%">请使用您的用户名和密码在下面登录.</h4>
-		<form id="form1" name="form1" method="post" action="/?controller=admin&method=login">
+		<form id="form1" name="form1" method="post" action="index.php?controller=admin&method=login">
 		<article class="module width_half">
 			<header><h3>管理员登录</h3></header>
 				<div class="module_content">

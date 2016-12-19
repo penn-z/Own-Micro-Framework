@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-12-16 22:10:48
+/* Smarty version 3.1.30, created on 2016-12-19 10:52:45
   from "/var/www/mvc/tpl/admin/leftmenu.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5853f5e85b4130_83852772',
+  'unifunc' => 'content_58574b7d3c7de8_92674194',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5853f5e85b4130_83852772 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58574b7d3c7de8_92674194 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <aside id="sidebar" class="column">
 	<h3>新闻管理</h3>

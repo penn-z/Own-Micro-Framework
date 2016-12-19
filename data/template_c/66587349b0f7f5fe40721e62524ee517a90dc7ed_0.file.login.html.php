@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-12-16 22:11:01
+/* Smarty version 3.1.30, created on 2016-12-19 10:52:40
   from "/var/www/mvc/tpl/admin/login.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5853f5f5172176_69137913',
+  'unifunc' => 'content_58574b789178b4_02275365',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '66587349b0f7f5fe40721e62524ee517a90dc7ed' => 
     array (
       0 => '/var/www/mvc/tpl/admin/login.html',
-      1 => 1481811360,
+      1 => 1482115497,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5853f5f5172176_69137913 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58574b789178b4_02275365 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html>
@@ -58,7 +58,7 @@ function content_5853f5f5172176_69137913 (Smarty_Internal_Template $_smarty_tpl)
 
 	//When page loads...
 	$(".tab_content").hide(); //Hide all content
-	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$("ul.tabs li:first").addClasss("active").show(); //Activate first tab
 	$(".tab_content:first").show(); //Show first tab content
 
 	//On Click Event
@@ -101,7 +101,7 @@ function content_5853f5f5172176_69137913 (Smarty_Internal_Template $_smarty_tpl)
 			<p>请在右侧登录</p>
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="admin.php?controller=admin">后台管理中心</a> <div class="breadcrumb_divider"></div> <a class="current">登录</a></article>
+			<article class="breadcrumbs"><a href="index.php?controller=admin">后台管理中心</a> <div class="breadcrumb_divider"></div> <a class="current">登录</a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	
@@ -115,7 +115,7 @@ function content_5853f5f5172176_69137913 (Smarty_Internal_Template $_smarty_tpl)
 	<section id="main" class="column">
 		
 		<h4 class="alert_info" style="width:46%">请使用您的用户名和密码在下面登录.</h4>
-		<form id="form1" name="form1" method="post" action="/?controller=admin&method=login">
+		<form id="form1" name="form1" method="post" action="index.php?controller=admin&method=login">
 		<article class="module width_half">
 			<header><h3>管理员登录</h3></header>
 				<div class="module_content">

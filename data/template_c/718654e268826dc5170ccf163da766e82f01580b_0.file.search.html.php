@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-12-16 23:08:25
+/* Smarty version 3.1.30, created on 2016-12-19 10:56:53
   from "/var/www/mvc/tpl/index/search.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58540369813664_95960895',
+  'unifunc' => 'content_58574c751e7849_31435894',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '718654e268826dc5170ccf163da766e82f01580b' => 
     array (
       0 => '/var/www/mvc/tpl/index/search.html',
-      1 => 1481900902,
+      1 => 1482114978,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./footer.html' => 1,
   ),
 ),false)) {
-function content_58540369813664_95960895 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58574c751e7849_31435894 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -32,7 +32,7 @@ function content_58540369813664_95960895 (Smarty_Internal_Template $_smarty_tpl)
 <title>文章发布系统</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="/img/css/default.css" rel="stylesheet" type="text/css" />
+<link href="img/css/default.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <?php $_smarty_tpl->_subTemplateRender("file:./header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-12-16 22:10:48
+/* Smarty version 3.1.30, created on 2016-12-19 10:52:45
   from "/var/www/mvc/tpl/admin/index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5853f5e85ace73_32962627',
+  'unifunc' => 'content_58574b7d3c2c88_57637967',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2e883c465fcc07d09dcd667762316ad78327dbfc' => 
     array (
       0 => '/var/www/mvc/tpl/admin/index.html',
-      1 => 1481877971,
+      1 => 1482115464,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:admin/leftmenu.html' => 1,
   ),
 ),false)) {
-function content_5853f5e85ace73_32962627 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58574b7d3c2c88_57637967 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html>
@@ -104,7 +104,7 @@ function content_5853f5e85ace73_32962627 (Smarty_Internal_Template $_smarty_tpl)
 			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="admin.php?controller=admin">后台管理中心</a> <div class="breadcrumb_divider"></div> <a class="current">首页</a></article>
+			<article class="breadcrumbs"><a href="index.php?controller=admin">后台管理中心</a> <div class="breadcrumb_divider"></div> <a class="current">首页</a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	
