@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-12-19 10:38:05
+/* Smarty version 3.1.30, created on 2017-01-03 16:34:12
   from "/var/www/mvc/tpl/index/sidebar.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5857480d158904_44608115',
+  'unifunc' => 'content_586b6204c58143_95868647',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '585fe3ab1879d4cffb694aa9792ccb7889d3fabd' => 
     array (
       0 => '/var/www/mvc/tpl/index/sidebar.html',
-      1 => 1481898780,
+      1 => 1483432294,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5857480d158904_44608115 (Smarty_Internal_Template $_smarty_tpl) {
+function content_586b6204c58143_95868647 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- start sidebar -->
 	<div id="sidebar">

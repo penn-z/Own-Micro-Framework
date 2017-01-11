@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-12-19 10:57:56
+/* Smarty version 3.1.30, created on 2017-01-03 16:35:27
   from "/var/www/mvc/tpl/admin/newslist.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58574cb4d39181_52330426',
+  'unifunc' => 'content_586b624f217dc7_99909015',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a8d56b6df53e7c9ee5619bd010136a269047541a' => 
     array (
       0 => '/var/www/mvc/tpl/admin/newslist.html',
-      1 => 1482115540,
+      1 => 1483432294,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:admin/leftmenu.html' => 1,
   ),
 ),false)) {
-function content_58574cb4d39181_52330426 (Smarty_Internal_Template $_smarty_tpl) {
+function content_586b624f217dc7_99909015 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html>

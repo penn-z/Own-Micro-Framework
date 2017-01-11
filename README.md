@@ -1,7 +1,7 @@
 # Own-Micro-Framework
 Framework to study I make.
-> @author:penn
-> @email:penn_z@aliyun.com
+> @author: penn  
+> @email: penn_z@aliyun.com
 # 关于此Demo:
 微型php小框架，视图引擎用的是Smarty，目前只有数据库类，待补充...
 
